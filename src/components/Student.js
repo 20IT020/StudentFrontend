@@ -18,6 +18,7 @@ export default function Student(props) {
         .get("http://localhost:8080/student/" + studentId)
         .then((response) => {
           if (response.data != null) {
+            //setId(response.data.id);
             setId(response.data.id);
             setName(response.data.name);
            // setAddress(response.data.address);
