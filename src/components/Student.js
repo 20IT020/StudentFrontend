@@ -20,7 +20,8 @@ export default function Student(props) {
           if (response.data != null) {
             setId(response.data.id);
             setName(response.data.name);
-            setAddress(response.data.address);
+           // setAddress(response.data.address);
+           setAddress(response.data.address);
           }
         })
         .catch((error) => props.showAlert("danger", "Error"));
